@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Brumm</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/brumm.css">
+    </head>
+    <body>
+
+        <div class="section cover">
+            <div class="cover__overlay">
+                <div class="container">
+                    <img class="logo" src="images/logo.png" alt="Brumm"/>
+                    <h1>Hitta bilen för dig</h1>
+                    <h5>Vi visar dig vägen!</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <p class="body_text">
+                    Vi ger dig skräddarydda <br> bilförslag utifrån dina behov.
+                </p>
+
+                <form id="survey_form">
+
+                    <div class="container survey_form">
+
+                        <label for="reason">Why are you buying a car?</label>
+                        <div class="row">
+                            <div class="six columns">
+                                <label>
+                                    <input type="radio" name="reason" value="Current car is unreliable">
+                                    <span class="label-body">Current car is unreliable</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="reason" value="Growing family">
+                                    <span class="label-body">Growing family</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="reason" value="Upgrading">
+                                    <span class="label-body">Upgrading</span>
+                                </label>
+                            </div>
+
+                            <div class="six columns">
+                                <label>
+                                    <input type="radio" name="reason" value="Downsizing">
+                                    <span class="label-body">Downsizing</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="reason" value="Expiring Lease">
+                                    <span class="label-body">Expiring Lease</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="reason" value="First car">
+                                    <span class="label-body">First car</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <label class="u-top-padding" for="num_of_seats">How many seats?</label>
+                        <div class="row">
+                            <div class="four columns">
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="2 seats">
+                                    <span class="label-body">2 seats</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="6 seats">
+                                    <span class="label-body">6 seats</span>
+                                </label>
+                            </div>
+
+                            <div class="four columns">
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="4 seats">
+                                    <span class="label-body">4 seats</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="7 seats">
+                                    <span class="label-body">7 seats</span>
+                                </label>
+                            </div>
+
+                            <div class="four columns">
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="5 seats">
+                                    <span class="label-body">5 seats</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="num_of_seats" value="8+ seats">
+                                    <span class="label-body">8+ seats</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <label class="u-top-padding" for="budget">What is your budget?</label>
+                        <input type="number" name="budget" value=""> SEK
+
+                        <label class="u-top-padding" for="importance">What is important to you?</label>
+                        <div class="row">
+                            <div class="six columns">
+                                <label>
+                                    <input type="checkbox" name="importance" value="Reliability">
+                                    <span class="label-body">Reliability</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Safety">
+                                    <span class="label-body">Safety</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Comfort">
+                                    <span class="label-body">Comfort</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Cost of ownership">
+                                    <span class="label-body">Cost of ownership</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Performance">
+                                    <span class="label-body">Performance</span>
+                                </label>
+                            </div>
+                            <div class="six columns">
+                                <label>
+                                    <input type="checkbox" name="importance" value="Style">
+                                    <span class="label-body">Style</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Fuel economy">
+                                    <span class="label-body">Fuel economy</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Storage Space">
+                                    <span class="label-body">Storage Space</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Technology">
+                                    <span class="label-body">Technology</span>
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="importance" value="Prestige">
+                                    <span class="label-body">Prestige</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <label class="u-top-padding" for="considerations">Any other considerations?</label>
+                        <input type="text" name="considerations" value="">
+
+                        <label class="u-top-padding" for="contact_info">Your email</label>
+                        <input type="email" name="contact_info" value="">
+
+                        <input type="submit" name="name" class="button button-primary btn__submit" value="Find me a car">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <hr>
+        <footer class="container">
+            <div class="footer container">
+                <span class="copyright">© Brumm</span>
+                <a href="#modal">Kontakta oss</a>
+            </div>
+        </footer>
+
+
+        <div id="modal">
+            <div class="modal-content">
+                <a class="modal__close" href="#">Close</a>
+
+                <div class="header">
+                    <h3>Hej! Bruum lanseras snart</h3>
+                </div>
+                <div class="copy">
+                    <p>Lämna din e-postadress för en exklusiv förhandsinbjudan. (Vi lovar att inte skicka spam)</p>
+
+                    <form class="" action="index.html" method="post">
+                        <input type="email" name="name" placeholder="mail@exempel.com">
+                        <input type="submit" name="name" class="button button-primary btn__submit" value="Skicka">
+                        <label for="">
+                            <input type="checkbox" name="accept" value="1">
+                            <span class="label-body">Jag medverkar gärna i användartester innan lansering av tjänsten.</span>
+                        </label>
+                    </form>
+
+
+                    <a class="button button-primary btn" href="#">OK</a>
+                </div>
+
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <iframe id="no-target" name="no-target" style="width:0;height:0;visibility:hidden;display:none;"></iframe>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
